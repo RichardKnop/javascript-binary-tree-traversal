@@ -10,19 +10,19 @@ define([], function () {
         function recursiveSearch(searchFor, node) {
             var found;
 
-            that.addRoutePoint(node.getValue());
-
-            // visit the node
-            if (searchFor === node.getValue()) {
-                return node;
-            }
-
             // traverse left subtree
             if (node.hasLeft()) {
                 found = recursiveSearch(searchFor, node.getLeft());
                 if (found) {
                     return found;
                 }
+            }
+
+            that.addRoutePoint(node.getValue());
+
+            // visit the node
+            if (searchFor === node.getValue()) {
+                return node;
             }
 
             // traverse right subtree

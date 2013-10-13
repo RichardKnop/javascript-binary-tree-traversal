@@ -8,7 +8,22 @@
 </head>
 <body>
 <h1>Binary Tree Traversal</h1>
-<img src="images/example.png" alt="Graph">
+<img src="images/example.png" alt="Binary Tree">
+<br>
+<label for="searchFor">
+    Search for <input type="text" id="searchFor" value="4">
+</label>
+<label for="algorithm">
+    Algorithm <select id="algorithm">
+        <option value="dfs_pre_order">Depth-first search: Pre-order</option>
+        <option value="dfs_in_order">Depth-first search: In-order (symmetric)</option>
+        <option value="dfs_post_order">Depth-first search: Post-order</option>
+        <option value="bfs">Breadth-first search</option>
+    </select>
+</label>
+<button id="search">Submit</button>
+<br>
+<p id="result"></p>
 <script data-main="js/src/bootstrap" src="bower_components/requirejs/require.js"></script>
 </body>
 </html>
