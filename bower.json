@@ -1,0 +1,15 @@
+{
+    "name": "javascript-binary-tree-traversal",
+    "version": "1.0.0",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test"
+    ],
+    "dependencies": {
+        "requirejs-domready": "~2.0.1",
+        "requirejs": "~2.1.8",
+        "qunit": "1.12.0"
+    }
+}
